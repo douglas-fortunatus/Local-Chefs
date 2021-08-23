@@ -1,0 +1,82 @@
+@keyframes zoomInOut {
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes spin01 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+// media queries
+@media (max-width: 991px) {
+    .special{
+        &_item{
+            width: 50%;
+
+            &:not(:last-child){
+                margin-bottom: 75px;
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .hero_text{
+
+        & h1{
+            font-size: 50px;
+            line-height: 65px;
+        }
+        
+    }
+
+    .about{
+
+        &_text, &_img{
+            width: 100%;
+        }
+
+        &_text{
+            & h3{
+                font-size: 24px;
+            }
+        }
+
+        &_img{
+            margin-top: 40px;
+        }
+    }
+
+    .menu{
+        &_item{
+            width: 100%;
+
+            &:nth-last-of-type(2)::after{
+                border-bottom: 2px dashed $seconday-color;
+            }
+        }
+    }
+
+    .footer_item{
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .special{
+        &_item{
+            width: 100%;
+        }
+    }   
+}

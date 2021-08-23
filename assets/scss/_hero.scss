@@ -1,0 +1,56 @@
+.hero_section{
+    position: relative;
+    overflow: hidden;
+
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    & .hero_bg{
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url(../img/menu-hero.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        z-index: -2;
+        animation: zoomInOut 20s ease infinite;
+    }
+
+    & .min-vh-100{
+        padding: 100px 0;
+    }
+
+    & .hero_text{
+       //background-color: yellowgreen;
+        padding: 0 15px;
+        max-width: 700px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+
+        & h1{
+            font-size: 60px;
+            line-height: 75px;
+            margin: 0 0 5px;
+            color: $white;
+        }
+
+        & p{
+            margin: 0 0  30px;
+            color: $white;
+            letter-spacing: 1;
+        }
+    }
+}

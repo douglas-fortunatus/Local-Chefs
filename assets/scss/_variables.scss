@@ -1,0 +1,26 @@
+$seconday-color: #311C0F;
+$dark-main-color: #311C0F;
+
+$main-color: #C88A46;
+$dark: #0c1023;
+$dark-light: #4d3823fa;
+$white: #ffffff;
+$white-light: #9c9998;
+
+$hover-color: rgba(0, 128, 0, 0.823);
+
+$shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+
+$body-font: 'Poppins', sans-serif;
+
+@mixin flexCenter{
+    Display: flex;
+    Justify-content: center;
+    Align-items: center;
+}
+
+@mixin flexBetween{
+    Display: flex;
+    Justify-content: space-between;
+    Align-items: center;
+}
